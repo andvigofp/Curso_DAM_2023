@@ -25,8 +25,10 @@ public class ConversorPesetaEurosTeclado {
             }
             // Realizar la conversión
             cantidadEuros = cantidadPesetas / valorEuroPesetas;
+            //Lo casteamos para quitar los decimales
+            int euros = (int) cantidadEuros;
             // Mostrar el resultado
-            System.out.println(cantidadPesetas + " pesetas equivalen a " + cantidadEuros + " euros.");
+            System.out.println(cantidadPesetas + " pesetas equivalen a " + euros + " euros.");
             //Fin
         }while (true);
     }

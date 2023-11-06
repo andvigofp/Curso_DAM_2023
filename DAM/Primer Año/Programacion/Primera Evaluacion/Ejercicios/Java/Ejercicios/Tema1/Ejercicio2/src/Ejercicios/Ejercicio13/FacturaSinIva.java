@@ -19,8 +19,10 @@ public class FacturaSinIva {
             //Imprime por pantalla
             //Inicio
             System.out.println("Ingrese una cantidad (Sin iva) o ingrese 0 para salir");
+            //Leer por teclado
             baseImponible = teclado.nextDouble();
             if (baseImponible == 0) {
+                //Imprime por pantalla
                 System.out.println("A salido correctamente");
                 break;
             }
@@ -28,12 +30,14 @@ public class FacturaSinIva {
             importeIva = baseImponible * tasaIva;
             //Para que calcule el total del importe a pagar
             totalFactura = baseImponible + importeIva;
-            //Imprime por pantalla
+            //Imprime por pantalla el resultado por pantalla
             System.out.println("Base Imponible: " + baseImponible + " euros");
+            //Imprime por pantalla el resultado por pantalla
             System.out.println("Importe del Iva (" + (tasaIva * 100) + "%: " + importeIva + " euros");
+            //Imprime por pantalla el resultado por pantalla
             System.out.println("Total de la factura: " + totalFactura + " euros");
-            //Fin
         }while (true);
+        //Fin
 
     }
 }

@@ -12,9 +12,11 @@ public class CadenaCaracteres {
          * Sí, es posible mostrar variables de tipo char y String juntas en la misma línea y
          * con una sola sentencia System.out.println en Java utilizando la concatenación de cadenas.
          */
-            //Variables tipo char y String
+            //Variables tipo char (Caracter)
             char letra1, letra2;
+            //Variables tipo String
             String nombre1, nombre2;
+            //Para dejar fijo las lectras
             letra1 = 'A';
             letra2 = 'B';
             nombre1 = "Angel";
