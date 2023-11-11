@@ -7,8 +7,8 @@ public class PasarMegasKb {
         /**
          * Realiza un conversor de Mb a Kb
          */
-        //variable tipo double
-        double megabytes, kilobytes;
+        //variable tipo enteros
+        int megabytes, kilobytes;
         //Salida por teclado
         Scanner teclado = new Scanner(System.in);
         //Bucle While se repite hasta que pulse 0 para salir
@@ -26,7 +26,7 @@ public class PasarMegasKb {
             //Operacion para hacer que conversor de MB a Kilobytes
             kilobytes = megabytes * 1024;
             //Imprime el resultado de la operación por pantalla
-            System.out.println("NB equivalen a " + kilobytes + " KB");
+            System.out.println("MB equivalen a " + kilobytes + " KB");
         }
         //Fin
     }

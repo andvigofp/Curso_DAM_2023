@@ -1,4 +1,2 @@
 usuario: andres
 contraseña: abc123.
-Odoo
-http://localhost:8069/

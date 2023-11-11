@@ -10,18 +10,18 @@ public class OperacionesMatematicas {
          * valor de cada variable, la suma, la resta, la división y la multiplicación.
          */
             //Variables tipo entero más pequeño
-            short x = 144;
-            short y = 999;
+            int x = 144;
+            int y = 999;
             // Mostrar el valor de las variables
             System.out.println("El valor de x es: " + x);
             System.out.println("El valor de y es: " + y+ "\n");
             // Realizar operaciones matemáticas
             int suma, resta, multiplicacion;
-            double division;
+            float division;
             suma = x+y;
             resta = x-1;
-            //Casteamos de short o int a double de las variables x e y para que no den valor 0 en la división
-            division = (double) x/y;
+            //Casteamos de short o int a float de las variables x e y para que no den valor 0 en la división
+            division = (float) x/y;
             multiplicacion = x*y;
 
 
