@@ -12,30 +12,37 @@ public class Ejercicio12If {
      * diferentes asignaturas del curso.
      */
     public static void main(String[] args) {
+        //Salida por teclado
         Scanner teclado = new Scanner(System.in);
-
-        int calificacion = 0;
-        int totalPreguntas = 10;
-
+        //Variables tipo entero
+        int calificacion, totalPreguntas, pregunta;
+            //Incializa la variable
+            calificacion = 0;
+            totalPreguntas = 10;
+        //Variable tipo String
+        String respuesta;
+        //Imprima por pantalla
         System.out.println("¡Bienvenido al mini cuestionario!");
         System.out.println("Responde a las siguientes 10 preguntas con 'a', 'b', o 'c'.");
         System.out.println("Para salir, ingresa '0' en cualquier momento.");
 
-        int pregunta = 1;
-
-        String respuesta;
-
+        pregunta = 1;
+        //Bucle while se repite hasta que se cumpla una condición
         while (pregunta <= totalPreguntas) {
+            //Inciio
+            //Imprima por pantalla
             System.out.println("\nPregunta " + pregunta + ":");
+            //Menú de opcines
             System.out.println("¿Cuál es la capital de Francia?");
             System.out.println("a) Paris");
             System.out.println("b) Londres");
             System.out.println("c) Madrid");
-
+            //Imprima por pantalla
             System.out.print("Tu respuesta: ");
+            //Convertir minuscualas a mayúsculas y quitarlosAcentos
             respuesta = quitarAcentos(teclado.nextLine().toLowerCase());
 
-
+            //Condición el if, si se cumple, la primera condición y si nó sale a la siguiente condición
             if (respuesta.equals("a")) {
                 System.out.println("¡Respuesta correcta!\n");
                 calificacion++;
@@ -45,12 +52,13 @@ public class Ejercicio12If {
             } else {
                 System.out.println("Respuesta incorrecta. La respuesta correcta es 'a) París'.\n");
             }
-
+            //contador
             pregunta++;
         }
-
+        //Imprima el resultado
         System.out.println("Tu calificación es: " + calificacion + " de " + totalPreguntas);
     }
+    //Fin
 
     // Función para quitar acentos de una cadena de texto
     public static String quitarAcentos(String input) {

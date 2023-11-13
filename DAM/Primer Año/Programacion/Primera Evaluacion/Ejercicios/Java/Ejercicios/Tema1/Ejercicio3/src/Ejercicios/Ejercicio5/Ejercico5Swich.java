@@ -17,23 +17,31 @@ public class Ejercico5Swich {
      * Esa ecuación no tiene solución real
      */
          public static void main(String[] args) {
+             //Salida por teclado
             Scanner teclado = new Scanner(System.in);
-
+            //variable tipo entero
+            int opcion;
+            //Variable tipo double
+            double a,b,x;
+             //Bucle do while se repite mientras se cumpla, sale cuando la condición sea falso
             do {
+                //Incio
+                //Imprime por pantalla
+                //Menú de opciones
                 System.out.print("Por favor, elige una opción:\n");
                 System.out.println("1. Resolver ecuación");
                 System.out.println("2. Salir");
                 System.out.print("Opción: ");
-                int opcion = teclado.nextInt();
-
+                opcion = teclado.nextInt();
+                //Condición del Swich, va caso por caso, si se cumple uno de los casos salé imprime el resultado por pantalla
                 switch (opcion) {
                     case 1:
                         System.out.print("Por favor, introduce el valor de 'a': ");
-                        double a = teclado.nextDouble();
+                        a = teclado.nextDouble();
 
                         System.out.print("Por favor, introduce el valor de 'b': ");
-                        double b = teclado.nextDouble();
-
+                        b = teclado.nextDouble();
+                        //Utilizamos .equals para hacer una cmparaión, para cuando pulsemos 0 salga del bucle
                         if (a == 0) {
                             if (b == 0) {
                                 System.out.println("La ecuación tiene infinitas soluciones.");
@@ -41,7 +49,9 @@ public class Ejercico5Swich {
                                 System.out.println("Esa ecuación no tiene solución real.");
                             }
                         } else {
-                            double x = -b / a;
+                            //Operaciones
+                            x = -b / a;
+                            //Imprime el resultado
                             System.out.println("La solución de la ecuación " + a + "x + " + b + " = 0 es x = " + x);
                         }
                         break;
@@ -56,6 +66,7 @@ public class Ejercico5Swich {
                 }
 
             } while (true);
+            //Fin
 
         }
     }

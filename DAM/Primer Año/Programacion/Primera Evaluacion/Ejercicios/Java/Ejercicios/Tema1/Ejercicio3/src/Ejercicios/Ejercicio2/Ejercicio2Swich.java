@@ -10,16 +10,23 @@ public class Ejercicio2Swich {
      * minutos no se deben introducir por teclado.
      */
     public static void main(String[] args) {
+            //Salida por pantalla
             Scanner teclado = new Scanner(System.in);
+            //variable tipo entero
             int hora;
+            //Variable tipo String(caracter)
             String continuar;
-
+            //Bucle do while se repite mientras se cumpla, sale cuando la condición sea falso
             do {
+                //Inico
+
+                //Imprime por pantalla
                 System.out.print("Por favor, introduce la hora (solo la parte de la hora, sin minutos): ");
+                //Leer por teclado
                 hora = teclado.nextInt();
-
+                //Variable tipo String(Caracter)
                 String saludo = "";
-
+                //Condición del Swich, va caso por caso, si se cumple uno de los casos salé imprime el resultado por pantalla
                 switch (hora) {
                     case 6,7,8,9,10,11,12:
                         saludo = "Buenos días";
@@ -31,12 +38,16 @@ public class Ejercicio2Swich {
                         saludo = "Buenas noches";
                         break;
                 }
-
+                //Imprime por pnatlla el resltado
                 System.out.println(saludo);
-
+                //imorime por pantalla
                 System.out.print("Pulsa 0 para salir o cualquier otra tecla para ingresar otra hora: ");
+                //Leer por teclado
                 continuar = teclado.next();
+                //Utilzamos .equals para compación, para cuando pulsemos 0 salga por teclado
             } while (!continuar.equals("0"));
+            //Imprime por pantalla
         System.out.println("A salido correctamente");
+        //Fin
         }
     }

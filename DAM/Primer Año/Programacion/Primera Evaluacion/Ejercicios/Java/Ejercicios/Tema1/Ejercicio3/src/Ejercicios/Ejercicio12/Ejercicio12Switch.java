@@ -13,24 +13,30 @@ public class Ejercicio12Switch {
      */
     public class MiniCuestionarioConSwitch {
         public static void main(String[] args) {
+            //Salida por teclado
             Scanner teclado = new Scanner(System.in);
-
-            int calificacion = 0;
+            //Variable tipo entero
+            int calificacion, pregunta;
+            //Incializa la variable
+            calificacion = 0;
+            //Variable tipo String
             String respuesta;
-
+            //Imprima por pantalla
             System.out.println("¡Bienvenido al mini cuestionario!");
             System.out.println("Responde a las siguientes preguntas con 'a', 'b', o 'c'.");
             System.out.println("Para salir, ingresa '0' en cualquier momento.");
-
+            //Bucle while se repite hasta que se cumpla una condición
             while (true) {
+                //Imprima por pantalla
                 System.out.println("Elige una pregunta del 1 al 10 (o ingresa 0 para salir): ");
-                int pregunta = teclado.nextInt();
-
+                //Leer por teclado
+                pregunta = teclado.nextInt();
+                //Condición el if, si se cumple, la primera condición y si nó sale a la siguiente condición, Pulsemos 0 para salir
                 if (pregunta == 0) {
                     System.out.println("Cuestionario finalizado.");
                     break;
                 }
-
+                //Condición del Swich, va caso por caso, si se cumple uno de los casos salé imprime el resultado por pantalla
                 switch (pregunta) {
                     case 1:
                         System.out.println("¿Cuál es la capital de Francia?");
@@ -44,10 +50,11 @@ public class Ejercicio12Switch {
                         System.out.println("Pregunta no válida.");
                         continue; // Salta al siguiente ciclo del bucle
                 }
-
+                //Imprima por pantalla
                 System.out.print("Tu respuesta: ");
+                //Convertir minuscualas a mayúsculas y quitarlosAcentos
                 respuesta = quitarAcentos(teclado.nextLine().toLowerCase());
-
+                //Condición del Swich, va caso por caso, si se cumple uno de los casos salé imprime el resultado por pantalla
                 switch (respuesta) {
                     case "a":
                         System.out.println("¡Respuesta correcta!\n");
@@ -64,6 +71,7 @@ public class Ejercicio12Switch {
             System.out.println("Tu calificación es: " + calificacion);
         }
     }
+    //Fin
 
     // Función para quitar acentos de una cadena de texto
     public static String quitarAcentos(String input) {

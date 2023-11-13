@@ -15,15 +15,18 @@ public class Ejercicio1If {
         String diaSemana,asignaturaPrimeraHora,continuar;
         //Bucle do wile se repite, hasta que se cumpla la condición
         do {
+            //Inicio
+
             //Imprime por pantalla
             System.out.print("Por favor, introduce un día de la semana o pulse \"0\" para salir: ");
             //Leer por teclado
             diaSemana = quitarAcentos(teclado.nextLine().toLowerCase()); // Convierte a minúsculas para evitar problemas de mayúsculas/minúsculas
-            //Dejamos vacío la variable para no tener problemas
+            //Utilizamos .equals para hacer una cmparaión, para cuando pulsemos 0 salga del bucle
             if (diaSemana.equals("0")) {
                 System.out.println("Salido correctamente");
                 break;
             }
+            //Dejamos la variable vacía
             asignaturaPrimeraHora = "";
 
             //Condición el if, si se cumple, la primera condición y si nó sale a la siguiente condición
@@ -52,7 +55,9 @@ public class Ejercicio1If {
 
         } while (true);
     }
-    // Función para quitar acentos de una cadena de texto
+    //Fin
+
+    //Función para poder quitar los acéntos
     public static String quitarAcentos(String input) {
         return Normalizer.normalize(input, Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "");
     }

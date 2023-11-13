@@ -17,16 +17,25 @@ public class Ejercicio5If {
      * Esa ecuación no tiene solución real
      */
     public static void main(String[] args) {
+        //Salida por teclado
         Scanner teclado = new Scanner(System.in);
+        //Variable tipo String(Caracter)
         String continuar;
-
+        //Variable tipo double
+        double a,b,x;
+        //Bucle do while se repite mientras se cumpla, sale cuando la condición sea falso
         do {
+            //Inicio
+            //Imprime por pantalla
             System.out.print("Por favor, introduce el valor de 'a': ");
-            double a = teclado.nextDouble();
-
+            //Leer por teclado
+            a = teclado.nextDouble();
+            //Imprime por pantalla
             System.out.print("Por favor, introduce el valor de 'b': ");
-            double b = teclado.nextDouble();
-
+            //Leer por teclado
+            b = teclado.nextDouble();
+            //Condición del si se cumple una de las condiciones, si no va a la siguiente condición
+            //Operaciones
             if (a == 0) {
                 if (b == 0) {
                     System.out.println("La ecuación tiene infinitas soluciones.");
@@ -34,13 +43,17 @@ public class Ejercicio5If {
                     System.out.println("Esa ecuación no tiene solución real.");
                 }
             } else {
-                double x = -b / a;
+                x = -b / a;
                 System.out.println("La solución de la ecuación " + a + "x + " + b + " = 0 es x = " + x);
             }
-
+            //Imprime por pantalla
             System.out.print("Pulsa 0 para salir o pulse otra tecla para continuar: ");
+            //Leer por teclado
             continuar = teclado.next();
+            //Utilzamos .equals para compación, para cuando pulsemos 0 salga por teclado
         } while (!continuar.equals("0"));
+        //Imprime por pantalla
         System.out.println("A salido corretcamente");
+        //Fin
     }
 }

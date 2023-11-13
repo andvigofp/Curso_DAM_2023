@@ -20,7 +20,7 @@ public class Ejercicio1Array {
         //Variable tipo String
         String diaSemana;
 
-        //Bucle do while se repite hasta que se cumpla la condición, saldra hasta que pulse, n para salir o S/s para salir
+        //Bucle do while se repite hasta que se cumpla la condición, saldra hasta que pulse 0 para salir del bucle
         do {
             //Inicio
 
@@ -56,7 +56,7 @@ public class Ejercicio1Array {
 
     }
 
-    // Función para quitar acentos de una cadena de texto
+    // Método para quitar acentos de una cadena de texto
     public static String quitarAcentos(String input) {
         return Normalizer.normalize(input, Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "");
     }

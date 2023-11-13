@@ -8,26 +8,38 @@ public class Ejercicio10If {
      * nacimiento.
      */
     public static void main(String[] args) {
+        //Salida por teclado
         Scanner teclado = new Scanner(System.in);
-        String continuar;
-
+        //Variable tipo entero
+        int dia, mes;
+        //Variable tipo string
+        String continuar, horoscopo;
+        //Bucle do while se repite mientras se cumpla, sale cuando la condición sea falso
         do {
+            //Inicio
+            //Imprima por pantalla
             System.out.print("Introduce el día de nacimiento: ");
-            int dia = teclado.nextInt();
-
+            //Leer por teclado
+            dia = teclado.nextInt();
+            //Imprima por teclao
             System.out.print("Introduce el mes de nacimiento (en número): ");
-            int mes = teclado.nextInt();
-
-            String horoscopo = determinarHoroscopo(dia, mes);
+            //Leer por teclado
+            mes = teclado.nextInt();
+            //Para coger los métodos de una funcón, hacer las operaciones
+            horoscopo = determinarHoroscopo(dia, mes);
+            //Imprima el resultado
             System.out.println("Tu horóscopo es: " + horoscopo);
-
+            //Imprima por pantalla
             System.out.print("Pulsa 0 para salir o pulse otra tecla para continuar: ");
+            //Leer por teclado
             continuar = teclado.next();
+            //Utilzamos .equals para compación, para cuando pulsemos 0 salga por teclado
         } while (!continuar.equals("0"));
-
+         //Imprima por pantalla
         System.out.println("A salido correctamente.");
+        //Fin
     }
-
+        //Funcíon para saber cuál es Horóscopo por mes y día correspondiente, condición del Sí
     private static String determinarHoroscopo(int dia, int mes) {
         String horoscopo = "";
 

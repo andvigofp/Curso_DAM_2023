@@ -8,29 +8,40 @@ public class Ejercicio11Switch {
      * segundos que faltan para llegar a la medianoche.
      */
     public static void main(String[] args) {
+        //Imprima por pantalla
         Scanner teclado = new Scanner(System.in);
+        //Variable tipo entero
+        int zonaHoraria, segundosHastaMedianoche;
+        //Variable tipo Strin
         String continuar;
-
+        //Bucle do while se repite mientras se cumpla, sale cuando la condición sea falso
         do {
+            //Inicio
+            //Imprima por pantalla
+            //Menú de opciones
             System.out.print("Selecciona una zona horaria (1-4):\n" +
                     "1. GMT\n" +
                     "2. UTC-3\n" +
                     "3. CET\n" +
                     "4. PST\n" +
                     "Introduce el número de la zona horaria: ");
-            int zonaHoraria = teclado.nextInt();
-
-            int segundosHastaMedianoche = calcularSegundosHastaMedianoche(zonaHoraria);
-
+            //Leer por teclado
+            zonaHoraria = teclado.nextInt();
+            //Para coger los métodos de una funcón, hacer las operaciones
+            segundosHastaMedianoche = calcularSegundosHastaMedianoche(zonaHoraria);
+            //Imprima el resultado
             System.out.println("Faltan " + segundosHastaMedianoche + " segundos para llegar a medianoche en la zona horaria seleccionada.");
-
+            //Imprima por pantalla
             System.out.print("Pulsa 0 para salir o pulse otra tecla para continuar: ");
+            //Leer por teclado
             continuar = teclado.next();
+            //Utilzamos .equals para compación, para cuando pulsemos 0 salga por teclado
         } while (!continuar.equals("0"));
-
+        //Imprima por pantalla
         System.out.println("A salido correctamente.");
+        //Fin
     }
-
+    //Función para calcular los segundos por hora, minutos hasta medianote, con la condición del Swich
     private static int calcularSegundosHastaMedianoche(int zonaHoraria) {
         int segundosHastaMedianoche = 0;
 
