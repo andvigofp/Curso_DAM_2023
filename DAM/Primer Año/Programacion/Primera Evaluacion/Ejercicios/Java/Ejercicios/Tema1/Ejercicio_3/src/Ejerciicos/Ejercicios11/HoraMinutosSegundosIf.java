@@ -4,15 +4,15 @@ import java.util.Scanner;
 
 public class HoraMinutosSegundosIf {
     public static void main(String[] args) {
-            Scanner scanner = new Scanner(System.in);
+            Scanner teclado = new Scanner(System.in);
             //Variables
             int horas, minutos, segundosActuales, segundosHastaMedianoche;
             // Solicitar la hora y minutos al usuario
             System.out.print("Introduce la hora (formato de 24 horas): ");
-            horas = scanner.nextInt();
+            horas = teclado.nextInt();
 
             System.out.print("Introduce los minutos: ");
-            minutos = scanner.nextInt();
+            minutos = teclado.nextInt();
 
             // Verificar que la hora y los minutos estén en rangos válidos
             if (horas >= 0 && horas <= 23 && minutos >= 0 && minutos <= 59) {

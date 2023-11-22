@@ -8,15 +8,15 @@ public class HoroscopoFechaIf {
      * nacimiento.
      */
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner teclado = new Scanner(System.in);
         //variables
         int dia, mes;
         // Solicitar día y mes de nacimiento al usuario
         System.out.print("Introduce el día de nacimiento: ");
-        dia = scanner.nextInt();
+        dia = teclado.nextInt();
 
         System.out.print("Introduce el mes de nacimiento (en número): ");
-        mes = scanner.nextInt();
+        mes = teclado.nextInt();
 
         // Verificar el mes y el día para determinar el horóscopo
         if ((mes == 3 && dia >= 21) || (mes == 4 && dia <= 19)) {

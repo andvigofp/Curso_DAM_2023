@@ -16,8 +16,6 @@ public class FormaPiramideIf {
         int altura, opcion;
 
         do {
-
-
             // Solicitar un carácter al usuario
             System.out.println("Introduce un carácter para la pirámide:");
             caracter = teclado.next().charAt(0);

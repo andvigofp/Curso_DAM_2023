@@ -11,7 +11,7 @@ public class CuestionarioDiezPreguntasIf {
      * diferentes asignaturas del curso.
      */
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner teclado = new Scanner(System.in);
 
         // Inicializar contador de respuestas correctas
         int contadorRespuestasCorrectas = 0;
@@ -27,7 +27,7 @@ public class CuestionarioDiezPreguntasIf {
         System.out.println("a) Un error en el código");
         System.out.println("b) Una instrucción que se repite");
         System.out.println("c) Un tipo de variable");
-        respuesta1 = scanner.nextLine().trim().toLowerCase();
+        respuesta1 = teclado.nextLine().trim().toLowerCase();
         if (respuesta1.equals("b")) {
             contadorRespuestasCorrectas++;
         }
@@ -37,7 +37,7 @@ public class CuestionarioDiezPreguntasIf {
         System.out.println("a) Microsoft Word");
         System.out.println("b) Android");
         System.out.println("c) Photoshop");
-        respuesta2 = scanner.nextLine().trim().toLowerCase();
+        respuesta2 = teclado.nextLine().trim().toLowerCase();
         if (respuesta2.equals("b")) {
             contadorRespuestasCorrectas++;
         }
@@ -47,7 +47,7 @@ public class CuestionarioDiezPreguntasIf {
         System.out.println("a) Lenguaje de programación");
         System.out.println("b) Sistema operativo");
         System.out.println("c) Lenguaje de consulta de bases de datos");
-        respuesta3 = scanner.nextLine().trim().toLowerCase();
+        respuesta3 = teclado.nextLine().trim().toLowerCase();
         if (respuesta3.equals("c")) {
             contadorRespuestasCorrectas++;
         }
@@ -57,7 +57,7 @@ public class CuestionarioDiezPreguntasIf {
         System.out.println("a) Hyper Text Markup Language");
         System.out.println("b) High Technology Modern Language");
         System.out.println("c) Home Tool Markup Language");
-        respuesta4 = scanner.nextLine().trim().toLowerCase();
+        respuesta4 = teclado.nextLine().trim().toLowerCase();
         if (respuesta4.equals("a")) {
             contadorRespuestasCorrectas++;
         }
@@ -67,7 +67,7 @@ public class CuestionarioDiezPreguntasIf {
         System.out.println("a) Base de datos");
         System.out.println("b) Array");
         System.out.println("c) Tarjeta de crédito");
-        respuesta5 = scanner.nextLine().trim().toLowerCase();
+        respuesta5 = teclado.nextLine().trim().toLowerCase();
         if (respuesta5.equals("c")) {
             contadorRespuestasCorrectas++;
         }
@@ -77,7 +77,7 @@ public class CuestionarioDiezPreguntasIf {
         System.out.println("a) Una fórmula matemática");
         System.out.println("b) Un conjunto de instrucciones paso a paso");
         System.out.println("c) Un error de compilación");
-        respuesta6 = scanner.nextLine().trim().toLowerCase();
+        respuesta6 = teclado.nextLine().trim().toLowerCase();
         if (respuesta6.equals("b")) {
             contadorRespuestasCorrectas++;
         }
@@ -87,7 +87,7 @@ public class CuestionarioDiezPreguntasIf {
         System.out.println("a) Eclipse");
         System.out.println("b) Photoshop");
         System.out.println("c) Visual Studio");
-        respuesta7 = scanner.nextLine().trim().toLowerCase();
+        respuesta7 = teclado.nextLine().trim().toLowerCase();
         if (respuesta7.equals("b")) {
             contadorRespuestasCorrectas++;
         }
@@ -97,7 +97,7 @@ public class CuestionarioDiezPreguntasIf {
         System.out.println("a) Un programa de edición de imágenes");
         System.out.println("b) Un dispositivo de seguridad de red");
         System.out.println("c) Un lenguaje de programación");
-        respuesta8 = scanner.nextLine().trim().toLowerCase();
+        respuesta8 = teclado.nextLine().trim().toLowerCase();
         if (respuesta8.equals("b")) {
             contadorRespuestasCorrectas++;
         }
@@ -107,7 +107,7 @@ public class CuestionarioDiezPreguntasIf {
         System.out.println("a) Representar la evolución del tiempo");
         System.out.println("b) Mostrar el flujo de datos en un programa");
         System.out.println("c) Describir un flujo de agua");
-        respuesta9 = scanner.nextLine().trim().toLowerCase();
+        respuesta9 = teclado.nextLine().trim().toLowerCase();
         if (respuesta9.equals("b")) {
             contadorRespuestasCorrectas++;
         }
@@ -117,7 +117,7 @@ public class CuestionarioDiezPreguntasIf {
         System.out.println("a) MySQL");
         System.out.println("b) MongoDB");
         System.out.println("c) PostgreSQL");
-        respuesta10 = scanner.nextLine().trim().toLowerCase();
+        respuesta10 = teclado.nextLine().trim().toLowerCase();
         if (respuesta10.equals("b")) {
             contadorRespuestasCorrectas++;
         }

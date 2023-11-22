@@ -11,7 +11,7 @@ public class CuestionarioDiezPreguntasSwich {
      * diferentes asignaturas del curso.
      */
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner teclado = new Scanner(System.in);
 
         // Inicializar contador de respuestas correctas
         int contadorRespuestasCorrectas = 0;
@@ -27,7 +27,7 @@ public class CuestionarioDiezPreguntasSwich {
         System.out.println("b) Una instrucción que se repite");
         System.out.println("c) Un tipo de variable");
         System.out.print("Respuesta: ");
-        respuesta1 = scanner.nextLine().trim().toLowerCase();
+        respuesta1 = teclado.nextLine().trim().toLowerCase();
 
         switch (respuesta1) {
             case "b":
@@ -41,7 +41,7 @@ public class CuestionarioDiezPreguntasSwich {
         System.out.println("b) Android");
         System.out.println("c) Photoshop");
         System.out.print("Respuesta: ");
-        respuesta2 = scanner.nextLine().trim().toLowerCase();
+        respuesta2 = teclado.nextLine().trim().toLowerCase();
 
         switch (respuesta2) {
             case "b":
@@ -55,7 +55,7 @@ public class CuestionarioDiezPreguntasSwich {
         System.out.println("b) Sistema operativo");
         System.out.println("c) Lenguaje de consulta de bases de datos");
         System.out.print("Respuesta: ");
-        respuesta3 = scanner.nextLine().trim().toLowerCase();
+        respuesta3 = teclado.nextLine().trim().toLowerCase();
 
         switch (respuesta3) {
             case "c":
@@ -69,7 +69,7 @@ public class CuestionarioDiezPreguntasSwich {
         System.out.println("b) High Technology Modern Language");
         System.out.println("c) Home Tool Markup Language");
         System.out.print("Respuesta: ");
-        respuesta4 = scanner.nextLine().trim().toLowerCase();
+        respuesta4 = teclado.nextLine().trim().toLowerCase();
 
         switch (respuesta4) {
             case "a":
@@ -83,7 +83,7 @@ public class CuestionarioDiezPreguntasSwich {
         System.out.println("b) Array");
         System.out.println("c) Tarjeta de crédito");
         System.out.print("Respuesta: ");
-        respuesta5 = scanner.nextLine().trim().toLowerCase();
+        respuesta5 = teclado.nextLine().trim().toLowerCase();
 
         switch (respuesta5) {
             case "c":
@@ -97,7 +97,7 @@ public class CuestionarioDiezPreguntasSwich {
         System.out.println("b) Un conjunto de instrucciones paso a paso");
         System.out.println("c) Un error de compilación");
         System.out.print("Respuesta: ");
-        respuesta6 = scanner.nextLine().trim().toLowerCase();
+        respuesta6 = teclado.nextLine().trim().toLowerCase();
 
         switch (respuesta6) {
             case "b":
@@ -111,7 +111,7 @@ public class CuestionarioDiezPreguntasSwich {
         System.out.println("b) Photoshop");
         System.out.println("c) Visual Studio");
         System.out.print("Respuesta: ");
-        respuesta7 = scanner.nextLine().trim().toLowerCase();
+        respuesta7 = teclado.nextLine().trim().toLowerCase();
 
         switch (respuesta7) {
             case "b":
@@ -125,7 +125,7 @@ public class CuestionarioDiezPreguntasSwich {
         System.out.println("b) Un dispositivo de seguridad de red");
         System.out.println("c) Un lenguaje de programación");
         System.out.print("Respuesta: ");
-        respuesta8 = scanner.nextLine().trim().toLowerCase();
+        respuesta8 = teclado.nextLine().trim().toLowerCase();
 
         switch (respuesta8) {
             case "b":
@@ -139,7 +139,7 @@ public class CuestionarioDiezPreguntasSwich {
         System.out.println("b) Mostrar el flujo de datos en un programa");
         System.out.println("c) Describir un flujo de agua");
         System.out.print("Respuesta: ");
-        respuesta9 = scanner.nextLine().trim().toLowerCase();
+        respuesta9 = teclado.nextLine().trim().toLowerCase();
 
         switch (respuesta9) {
             case "b":
@@ -153,7 +153,7 @@ public class CuestionarioDiezPreguntasSwich {
         System.out.println("b) MongoDB");
         System.out.println("c) PostgreSQL");
         System.out.print("Respuesta: ");
-        respuesta10 = scanner.nextLine().trim().toLowerCase();
+        respuesta10 = teclado.nextLine().trim().toLowerCase();
 
         switch (respuesta10) {
             case "b":

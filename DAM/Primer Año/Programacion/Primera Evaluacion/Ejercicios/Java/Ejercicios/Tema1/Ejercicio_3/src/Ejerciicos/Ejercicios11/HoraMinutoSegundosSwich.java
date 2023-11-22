@@ -8,17 +8,17 @@ public class HoraMinutoSegundosSwich {
  * segundos que faltan para llegar a la medianoche.
  */
 public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner teclado = new Scanner(System.in);
 
         //Variables
         int horas, minutos, segundosEnUnaHora, segundosEnUnMinuto, segundosHastaMedianoche;
 
         // Solicitar la hora y minutos al usuario
         System.out.print("Introduce la hora (formato de 24 horas): ");
-        horas = scanner.nextInt();
+        horas = teclado.nextInt();
 
         System.out.print("Introduce los minutos: ");
-        minutos = scanner.nextInt();
+        minutos = teclado.nextInt();
 
         // Utilizar switch para manejar diferentes casos basados en la hora
         switch (horas) {
