@@ -21,11 +21,7 @@ public class Ejercicio14If {
             //Leer por teclado
             numero = teclado.nextInt();
             //Condición del if igualamos la vraible número==0, para cuando pulsemos 0 salga del bucle
-            if (numero == 0) {
-                //imprime por pantalla
-                System.out.println("A salido correctamente.");
-                break;
-            }
+
             //Condifición del bucle si se cumple la primera condición sale, si no pasa a la siguiente, condición hasta que uno se cumpla una condición
             if (esPar(numero) && esDivisibleEntre5(numero)) {
                 System.out.println("El número " + numero + " es par y divisible entre 5.");
@@ -37,7 +33,8 @@ public class Ejercicio14If {
                 System.out.println("El número " + numero + " no es par, no es divisible entre 5.");
             }
 
-        } while (true);
+        } while (numero !=0);
+        System.out.println("A salido correctamnete");
         //Fin
     }
     //Funcíones si es "Par" o si es "divisibleentre 5", utilizamos la condición del boolean si es verdadero entonces me muestras el resultado

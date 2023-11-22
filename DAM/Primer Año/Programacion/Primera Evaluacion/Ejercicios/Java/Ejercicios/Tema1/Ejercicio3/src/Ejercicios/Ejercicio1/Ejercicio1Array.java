@@ -17,6 +17,7 @@ public class Ejercicio1Array {
 
         //Variable tipo entero
         int indiceDia;
+        indiceDia = -1;
         //Variable tipo String
         String diaSemana;
 
@@ -29,19 +30,15 @@ public class Ejercicio1Array {
             // Convierte el texto ingresado a minúsculas para evitar problemas de mayúsculas/minúsculas
             diaSemana = quitarAcentos(teclado.nextLine().toLowerCase());
 
-            if (diaSemana.equals("0")) {
-                System.out.println("A salido correctamente");
-                break;
-            }
 
-            //Va restando la posición del bucle
-            indiceDia = -1;
+
             //Recorremos el Array con un bucle For
             for (int i = 0; i < diasSemana.length; i++) {
                 if (diaSemana.equals(diasSemana[i])) {
                     indiceDia = i;
                     break;
                 }
+
             }
             //Condición el if, si se cumple, la primera condición y si nó sale a la siguiente condición
             if (indiceDia != -1) {
@@ -51,7 +48,8 @@ public class Ejercicio1Array {
                 System.out.println("Día no válido.");
             }
 
-        } while (true);
+        } while (!diaSemana.equals("0"));
+        System.out.println("Fin del programa");
         //Fin
 
     }

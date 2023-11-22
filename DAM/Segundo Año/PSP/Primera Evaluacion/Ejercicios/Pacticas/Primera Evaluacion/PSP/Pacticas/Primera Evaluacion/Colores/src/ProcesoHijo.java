@@ -24,6 +24,7 @@ public class ProcesoHijo {
                 // Enviar la respuesta al proceso padre
                 if (eleccionUsuario != null && eleccionUsuario.equalsIgnoreCase(colorElegido)) {
                     System.out.println("¡Correcto! Has adivinado el color.");
+					break;
                 } else {
                     System.out.println("Incorrecto. Inténtalo de nuevo.");
                 }

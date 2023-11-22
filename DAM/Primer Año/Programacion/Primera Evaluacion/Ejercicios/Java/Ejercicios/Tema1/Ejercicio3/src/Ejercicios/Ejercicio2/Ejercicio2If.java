@@ -16,7 +16,7 @@ public class  Ejercicio2If{
             //Variable tipo entero
             int hora;
             //Variable tipo String(Carácter)
-            String continuar;
+            String continuar, saludo;
             //Bucle do while se repite mientras se cumpla, sale cuando la condición sea falso
             do {
                 //Fin
@@ -28,12 +28,14 @@ public class  Ejercicio2If{
                 //Condición del si se cumple una de las condiciones, si no va a la siguiente condición
                 //Operaciones
                 if (hora >= 6 && hora <= 12) {
-                    System.out.println("Buenos días");
+                    saludo ="Buenos días";
                 } else if (hora >= 13 && hora <= 20) {
-                    System.out.println("Buenas tardes");
+                    saludo ="Buenas tardes";
                 } else {
-                    System.out.println("Buenas noches");
+                    saludo ="Buenas noches";
                 }
+
+                System.out.println("Los saludos por hora son: " + saludo);
                 //Imprime por pantalla
                 System.out.print("Pulsa 0 para salir o pulse una hora para continuar: ");
                 //Leer por teclado
@@ -41,7 +43,7 @@ public class  Ejercicio2If{
                 //Utilzamos .equals para compación, para cuando pulsemos 0 salga por teclado
             } while (!continuar.equals("0"));
             //Imprime por pantalla
-        System.out.println("A salido correctamente");
+        System.out.println("Ha salido correctamente");
         //Fin
         }
     }

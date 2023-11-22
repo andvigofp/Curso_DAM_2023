@@ -14,6 +14,7 @@ public class Ejercicio1Swich {
         //Variables tipo String (Caracter)
         String diaSemana, asignaturaPrimeraHora;
 
+
         //Bucle tipo do while se repite hasta que se cumple la condición
         do {
             //Inicio
@@ -23,10 +24,7 @@ public class Ejercicio1Swich {
             //Leer por teclado
             diaSemana = quitarAcentos(teclado.nextLine().toLowerCase()); //// Convierte el texto ingresado a minúsculas para evitar problemas de mayúsculas/minúsculas
             //Condición del if igualamos la vraible número==0, para cuando pulsemos 0 salga del bucle
-            if (diaSemana.equals("0")) {
-                System.out.println("A salido correctamente");
-                break;
-            }
+
             //Dejamos la variable vacía
             asignaturaPrimeraHora = "";
             //Condición del Swich, va caso por caso, si se cumple uno de los casos salé imprime el resultado por pantalla
@@ -59,7 +57,8 @@ public class Ejercicio1Swich {
             //Imprime por pantalla
             System.out.println("El día " + diaSemana + " a primera hora tienes la asignatura de " + asignaturaPrimeraHora + ".");
 
-        } while (true);
+        } while (!diaSemana.equals("0"));
+        System.out.println("Fin del programa");
         //Fin
     }
 
