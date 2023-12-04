@@ -8,19 +8,19 @@ public class OrednarTresNumerosIf {
      */
 
     public static void main(String[] args) {
-        Scanner teclado = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         //Variables
         int num1,num2,num3;
 
         // Solicitar tres números al usuario
         System.out.println("Introduce el primer número:");
-        num1 = teclado.nextInt();
+        num1 = scanner.nextInt();
 
         System.out.println("Introduce el segundo número:");
-        num2 = teclado.nextInt();
+        num2 = scanner.nextInt();
 
         System.out.println("Introduce el tercer número:");
-        num3 = teclado.nextInt();
+        num3 = scanner.nextInt();
 
         // Ordenar los números
         if (num1 <= num2 && num1 <= num3) {

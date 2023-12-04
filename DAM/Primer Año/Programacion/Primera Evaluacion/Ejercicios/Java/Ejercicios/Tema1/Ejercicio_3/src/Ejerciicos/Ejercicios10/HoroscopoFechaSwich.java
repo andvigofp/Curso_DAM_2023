@@ -8,16 +8,16 @@ public class HoroscopoFechaSwich {
      * nacimiento.
      */
     public static void main(String[] args) {
-        Scanner teclado = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         //variables
         int dia, mes;
 
         // Solicitar día y mes de nacimiento al usuario
         System.out.print("Introduce el día de nacimiento: ");
-        dia = teclado.nextInt();
+        dia = scanner.nextInt();
 
         System.out.print("Introduce el mes de nacimiento (en número): ");
-        mes = teclado.nextInt();
+        mes = scanner.nextInt();
 
         // Utilizar switch con rangos para determinar el horóscopo
         switch (mes) {

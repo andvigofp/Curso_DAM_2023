@@ -8,13 +8,12 @@ public class DivisibleEntreCincoParIf {
      * divisible entre 5.
      */
     public static void main(String[] args) {
-        // Salida por teclado
-        Scanner teclado = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         //Variable
         int numero;
         // Solicitar un número al usuario
         System.out.println("Introduce un número entero:");
-        numero = teclado.nextInt();
+        numero = scanner.nextInt();
 
         // Comprobar si el número es par y/o divisible entre 5
         if (numero % 2 == 0) {

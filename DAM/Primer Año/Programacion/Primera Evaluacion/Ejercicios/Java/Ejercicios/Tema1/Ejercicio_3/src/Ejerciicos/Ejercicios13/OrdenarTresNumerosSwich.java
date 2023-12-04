@@ -8,19 +8,19 @@ public class OrdenarTresNumerosSwich {
      */
 
     public static void main(String[] args) {
-            Scanner teclado = new Scanner(System.in);
+            Scanner scanner = new Scanner(System.in);
             //variables
             int num1,num2,num3,temp;
 
             // Solicitar tres números al usuario
             System.out.println("Introduce el primer número:");
-            num1 = teclado.nextInt();
+            num1 = scanner.nextInt();
 
             System.out.println("Introduce el segundo número:");
-            num2 = teclado.nextInt();
+            num2 = scanner.nextInt();
 
             System.out.println("Introduce el tercer número:");
-            num3 = teclado.nextInt();
+            num3 = scanner.nextInt();
 
             // Definir una variable para el caso de 'switch'
             // Ordenar los números de menor a mayor usando 'switch'

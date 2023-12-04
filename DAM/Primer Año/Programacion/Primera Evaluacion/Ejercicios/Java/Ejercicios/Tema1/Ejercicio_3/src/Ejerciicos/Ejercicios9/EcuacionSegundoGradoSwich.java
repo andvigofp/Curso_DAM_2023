@@ -8,12 +8,12 @@ public class EcuacionSegundoGradoSwich {
      * bx + c = 0).
      */
     public static void main(String[] args) {
-        Scanner teclado = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         //variables
         double a, b,c, discriminante,x1,x2,x;
         // Solicitar los coeficientes al usuario
         System.out.print("Introduce el coeficiente a: ");
-        a = teclado.nextDouble();
+        a = scanner.nextDouble();
 
         switch ((int) a) {
             case 0:
@@ -22,10 +22,10 @@ public class EcuacionSegundoGradoSwich {
             case 1:
                 // Solicitar otros coeficientes al usuario
                 System.out.print("Introduce el coeficiente b: ");
-                b = teclado.nextDouble();
+                b = scanner.nextDouble();
 
                 System.out.print("Introduce el coeficiente c: ");
-                c = teclado.nextDouble();
+                c = scanner.nextDouble();
 
                 // Calcular el discriminante
                 discriminante = b * b - 4 * a * c;
